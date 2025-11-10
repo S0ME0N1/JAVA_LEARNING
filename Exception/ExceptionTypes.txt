@@ -1,0 +1,31 @@
+Types :
+
+1. Checked Exceptions
+  - Checked during compiled time
+  - Handled by try-catch block
+  - Declared in method signature using throws keyword
+
+  Examples:
+
+  - IOException: Occurs due to input/output operation failure
+  - SQLException: Related to database access error
+  - ClassNotFoundException : Occurs when an application tries to load a class by its name but cannot find it
+
+2. UnCheck Exceptions
+- Not checked during compiled time
+- Indicating programming errors
+- Avoided by writing correct code
+
+  Examples:
+
+  - NullPointException : Occur when application attempts to use a null object reference
+  - ArrayIndexOutOfBoundsException : Thrown when trying to access an index array that's negative or >= array size
+  - ArithmeticException : Due to exceptional arithmetic condition
+  - IllegalArgumentException : Indicating a method has passed an illegal argument
+
+3. Custom Exceptions
+- create an exception class
+
+Java Mechanism :
+
+Try - Catch - Finally } BLOCKS

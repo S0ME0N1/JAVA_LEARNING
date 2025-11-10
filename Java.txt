@@ -1,0 +1,49 @@
+Java
+
+
+Create by : Sun Microsystems (1995)
+Owned by  : Oracle
+
+
+Java Ecosystem:
+
+Java Development Kit (JDK)
+
+1. Java Compiler (javac)  : Source code into platform independent bytecode
+2. Java Runtime Environment (JRE) : Encompasses of JVM and core libraries - Run application
+3. Utilities : Command Line Tools
+
+
+IDE's (Integrated Development Environment):
+
+Frameworks : Facilitate code reuse and accelerate Development
+
+1. The Spring Framework
+Feature:
+
+1. Dependency Injection (DE) : promotes loosely coupled code
+2. Aspect-Oriented Programming (AOP) : seperate cross cutting concern from business logic
+3. Spring Boot : Simplify application setup with embeded servers and pre-configuration
+4. Spring Model-View-Controller (MVC) : streamline web application Development
+
+
+2. Hibernate
+Feature:
+
+1. Object Oriented Mapping (ORM) Framework : Simplify data handle by automating Mapping Objects to database tables
+
+
+Build Tools :
+Feature :
+
+- Automate compiling code, managing Dependency, packaging applications
+
+1. Maven - Dependency management, standardised build cycle
+2. Gradle - Incremental build, multi-project support, Use Kotlin or Groovy
+
+
+Application servers:
+ - Deploy and manage application
+
+1. Apache Tomcat : Small and Medium application
+2. JBoss : Java EE stack
