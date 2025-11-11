@@ -47,3 +47,340 @@ Application servers:
 
 1. Apache Tomcat : Small and Medium application
 2. JBoss : Java EE stack
+
+
+// Type Casting
+===============
+        char a = 'a';
+        ASCII value of a is = (int)a
+
+Ex.
+        public class DataCharToInt {
+            public static void main(String s[]) {
+                char a = 'a';
+                System.out.println("a is ");
+                System.out.println("ASCII value of a is "+(int)a);
+            }
+        }
+
+
+        double area_circle         = 78.53981634d;
+        ASCII value of area_circle =  (int)area_circle
+
+
+Data Type in Java
+=================
+
+public class DataTypes {
+    public static void main(String s[]) {
+        //byte ranges from -128 to 127
+        //use for handling file data in binary format
+        byte b = 125;
+        System.out.println("Byte value " + b);
+
+        //short ranges from -32,768	to 32,767
+        //Suitable for memory-constrained environments where integers are too large
+        // Used for Game scores, sensor readings etc.,
+
+        short points = 3000;
+        System.out.println("Points scored as 'short' value " + points);
+
+        //int  ranges from -2^31	to (2^31)-1
+        //Suitable for all general purpose use of numbers
+        // Suits values that are whole numbers
+
+        int population = 4358000;
+        System.out.println("Population as 'int' value " + population);
+
+        //long ranges from -2^63	to (2^63)-1
+        //Used for large numeric values, timestamps in milliseconds
+        // It has to end with an l indcating it is a long integer
+        long age_in_milliseconds = 788923800000l;
+        System.out.println("Age of 25 years in milliseconds as 'long' value " + age_in_milliseconds);
+
+        //char is used to store on character
+        // Suitable for capturing keyboad input one key at a time
+        // Used mostly as a group called arrays for words
+        char keyboard_input = 'a';
+        System.out.println("Key board input is "+keyboard_input);
+
+        //boolean is used to true or false
+        // Suitable for anything where the values can only be true or false
+        boolean isLabCompleted = false;
+        System.out.println("The lab is completed "+isLabCompleted);
+
+        //float is used for numbers with decimals, with precision up to 7 decimal digits
+        // Suitable for representing money, measurement of area, volume, etc.,
+        // It has to end with an f
+        float house_value = 4000000.58f;
+        System.out.println("The value of the house is $"+house_value);
+
+        //double  is used for numbers with decimal,  with precision up to 15 decimal digits
+        // Suitable for representing statistical, astronimcal measurements
+        double pi = 3.14159265359;
+        System.out.println("The value of pi is "+pi);
+    }
+}
+
+Math Operation
+===============
+public class MathOperators {
+    public static void main(String[] args) {
+        int num1 = 20;
+        int num2 = 10;
+
+        System.out.println("Mathematical operators with numbers " + num1 + " and " + num2 );
+
+        // Addition
+        System.out.println("Addition: + operator " + (num1 + num2) );
+
+        // Subtraction
+        System.out.println("Subtraction: - operator " + (num1 - num2) );
+
+        // Multiplication
+        System.out.println("Multiplication: * operator " + (num1 * num2) );
+
+        // Division
+        System.out.println("Division: / operator " + (num1 / num2) );
+
+        // Modulus (remainder)
+        System.out.println("Modulus: % operator " + (num1 % num2) );
+
+        // Use double for more precise division
+        double num3 = 20.0;
+        double num4 = 7.0;
+        System.out.println("Precise Division: " + (num3 / num4));
+    }
+}
+
+
+RelationalOperators
+==========================
+public class RelationalOperators {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+
+        // Equal to (==)
+        System.out.println("a == b: " + (a == b)); // false
+
+        // Not equal to (!=)
+        System.out.println("a != b: " + (a != b)); // true
+
+        // Greater than (>)
+        System.out.println("a > b: " + (a > b)); // false
+
+        // Less than (<)
+        System.out.println("a < b: " + (a < b)); // true
+
+        // Greater than or equal to (>=)
+        System.out.println("a >= b: " + (a >= b)); // false
+
+        // Less than or equal to (<=)
+        System.out.println("a <= b: " + (a <= b)); // true
+    }
+}
+
+String Modification
+==============================
+public class StringModification{
+    public static void main(String args[]){
+
+      String Name = "Saurabh";
+
+      // length() and charAt
+      for (int i = 0 ; i <= Name.length() - 1 ; i++){
+        System.out.println(Name.charAt(i));
+      }
+
+
+      //Concate
+
+      String FName = "Saurabh";
+      String LName = "Prajapati" ;
+
+      String FullName1 = FName + " " + LName ;
+      System.out.println(FullName1) ;
+      String FullName = FName.concat(" ").concat(LName);
+      System.out.println(FullName) ;
+
+
+      // String Comparision
+
+      String Str1 = "Sample1" ;
+      String Str2 = "Sample2" ;
+      String Str3 = "Sample1" ;
+
+        System.out.println(Str1.equals(Str3));
+        System.out.println(Str1.equals(Str2));
+
+
+      //SubStrings
+
+      String Str4 = "Java Programming" ;
+      String sub = Str4.substring(5,16) ;
+        System.out.println(sub);
+
+      // String Split
+
+      String csv = "apple, banana, cherry" ;
+      String[] fruites = csv.split(",") ;
+
+        for (String fruit : fruites ){
+            System.out.println(fruit) ;
+        }
+
+    //Join String
+
+    String[] Colours = {"Red","Blue","Yellow"};
+    String joinedcolors = String.join(",", Colours);
+
+
+      System.out.println(joinedcolors) ;
+
+    // Upper and Lower Case
+    String Greet = "hello world!";
+      System.out.println(Greet.toUpperCase()) ;
+      System.out.println(Greet.toLowerCase()) ;
+
+    String s1 = "The quick brown fox jumped over the lazy dog";
+
+      System.out.println(s1.length());
+
+        char[] strAsArr = s1.toCharArray();
+        System.out.println(strAsArr.length);
+
+        System.out.println(strAsArr);
+
+        System.out.println("The first char of the string is " + strAsArr[0]);
+        System.out.println("The last char of the string is " + strAsArr[strAsArr.length-1]);
+
+        System.out.println("The index of T is " + s1.indexOf('T'));
+        System.out.println("The index of g is " + s1.indexOf('g'));
+
+/**
+    //trim()
+    // replace ("old word","new word")
+    .equals - Returns true if the content of two Strings are exactly the same including the leading and trailing space.
+    .equalsIgnoreCase - Returns true ignoring the case of the two Strings. But the characters have to be in the same
+                        positions in both Strings and should not have any leading and trailing spaces.
+    .strip() - Removes the leading and trailing white spaces. This is extremely useful when dealing with data.
+    .matches()
+
+    String regexStr = "^W.*";
+    s1.matches(regexStr)) -
+    ^W.* - matches all Strings that start with uppercase W followed by any characeters or any length.
+
+
+**/
+
+  }
+
+}
+
+Function
+===========================
+package math.functions ;
+public class Functions{
+      public int add(int a, int b){
+          return a + b ;
+      }
+}
+
+
+Ex.
+
+public class Display{
+      public void show(int number){
+        System.out.println("Number : "+number);
+      }
+
+      public void show(String name){
+        System.out.println("Text : "+name);
+      }
+
+      public static void main(String[] args){
+
+          Display display = new Display();
+
+          display.show(10);
+          display.show("Saurabh");
+    }
+}
+
+
+Or
+
+public class Greeting{
+
+    public void greet(String name, int age){
+      System.out.println("Name : "+ name + ", Age : "+ age);
+    }
+
+    public static void main(String[] args){
+
+      Greeting greeting = new Greeting();
+      greeting.greet("Saurabh",28) ;
+
+      // System.out.println(greeting.greet());
+    }
+
+}
+
+
+Exception Types in Java
+=========================
+
+1. Checked Exceptions
+  - Checked during compiled time
+  - Handled by try-catch block
+  - Declared in method signature using throws keyword
+
+  Examples:
+
+  - IOException: Occurs due to input/output operation failure
+  - SQLException: Related to database access error
+  - ClassNotFoundException : Occurs when an application tries to load a class by its name but cannot find it
+
+2. UnCheck Exceptions
+- Not checked during compiled time
+- Indicating programming errors
+- Avoided by writing correct code
+
+  Examples:
+
+  - NullPointException : Occur when application attempts to use a null object reference
+  - ArrayIndexOutOfBoundsException : Thrown when trying to access an index array that's negative or >= array size
+  - ArithmeticException : Due to exceptional arithmetic condition
+  - IllegalArgumentException : Indicating a method has passed an illegal argument
+
+3. Custom Exceptions
+- create an exception class
+
+Java Mechanism :
+
+Try - Catch - Finally } BLOCKS
+
+Ex.
+
+public class Exception{
+
+      public static void main(String[] args){
+
+        int numberator = 10 ;
+        int denominator = 0 ;
+
+        try{
+
+            int  result = numberator / denominator ;
+            System.out.println("Result : "+ result);
+
+        } catch (ArithmeticException e){
+            System.out.println("Error: Cannot divide by zero");
+
+        } finally {
+            System.out.println("Finally block executed");
+        }
+
+      }
+}
